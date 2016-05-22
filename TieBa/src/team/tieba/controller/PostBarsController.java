@@ -93,6 +93,38 @@ public class PostBarsController {
 	}
 	
 	/**
+	 * +取消关注
+	 * @param request
+	 * @param response
+	 * @return
+	 * @throws IOException
+	 */
+	@RequestMapping(value="/subattention",method=RequestMethod.GET)
+	public String subAtttention(HttpServletRequest request) throws IOException{
+		
+		String bname = request.getParameter("bname");
+		
+		User user = (User)request.getSession().getAttribute("user");
+		
+		if (user == null) {
+			return "login";
+		}
+		
+		Follow follow = new Follow();
+		follow.setUname(user.getUname());
+		follow.setBname(bname);
+		
+		
+		boolean isSucc = service.attention(follow);
+		if (!isSucc) {
+			return "error";
+		}
+		
+		
+		return "forward:bar.do?bname="+bname;
+	}
+	
+	/**
 	 * 搜索功能--主页
 	 * @param request
 	 * @param model
