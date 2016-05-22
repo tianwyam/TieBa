@@ -1,0 +1,144 @@
+@CHARSET "UTF-8";
+
+body{
+    background-image: url("../images/bg6.jpg");
+    background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content{
+	margin:0 auto;
+	padding:1em;
+	max-width:64em;
+	margin-top:2em;
+	background:rgba(179, 77, 38, 0.38);
+	//border:1px #04FF00 solid;
+}
+
+
+/**
+*	头部
+**/
+.head{
+	margin:0 auto;
+	max-width:64em;
+	height:8em;
+	background-color:rgba(171, 211, 218, 0.12);
+}
+
+
+/**
+*	搜索
+**/
+.search{
+	display:inline-block;
+	padding:1em;
+}
+
+.search .searchImg{
+	vertical-align:middle;
+	max-width:2em;
+}
+
+.search .searchContent1{
+	height:4em;
+	max-width:5em;
+	padding:.5em;
+}
+
+.search .searchContent2{
+	height:4em;
+	width:25em;
+	padding:.5em;
+}
+
+.search #btnSearch{
+	background:#19b955;
+	color:white;
+	padding:.5em;
+	font-size:1.3em;
+	font-family:'华文行楷';
+}
+
+.search #btnSearch:hover{
+	background:#11DA5D;
+	
+}
+
+/**
+*	主体
+**/
+.main{
+	clear:both;
+}
+
+.main #Popular{
+	font-size:1.2em;
+	font-family:'微软雅黑';
+	border-left:3px blue solid;
+	padding-left:8px;
+}
+
+.main #barMssg{
+	margin-top:1em;
+	margin-left:1em;
+	clear:both;
+	height:6em;
+	padding:2.5em;
+	background:rgba(212, 212, 234, 0.12);;
+	//border:1px blue solid;
+}
+
+.main #barMssg #barImg{
+	max-width:4em;
+	float:left;
+	padding-top:1em;
+}
+
+/**
+*	贴子
+**/
+
+.main #barMssg #postMssg{
+	float:left;
+	margin-left:2em;
+	padding:0.8em;
+}
+
+.main #barMssg #postMssg #bname{
+	font-size:1.2em;
+}
+
+.main #barMssg #postMssg #title{
+	color:blue;
+}
+
+/**
+*	消息人数
+**/
+
+.main #barMssg #msgNum{
+	padding:4em;
+}
+
+.main #barMssg #msgNum #msg{
+	max-width:1.5em;
+	margin-left:4em;
+}
+
+.main #barMssg #msgNum #pnum{
+	font-size:1em;
+	font-family:'华文行楷';
+	color:blue;
+	margin-left:0.6em;
+}
+
+.main #barMssg #msgNum #sendtime{
+	float:right;
+	font-size:1.4em;
+	font-family:'华文行楷';
+	color:blue;
+}

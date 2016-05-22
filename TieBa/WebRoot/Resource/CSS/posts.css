@@ -1,0 +1,309 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	background:url("../images/bg3.jpg");
+	background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content{
+	margin:1em auto;
+	max-width:60em;
+}
+
+
+/**
+* head
+**/
+.content .head{
+	background:rgba(236, 125, 135, 0.27);
+	height:5em;
+}
+
+.content .head #barImg{
+	max-width:2.5em;
+	float:left;
+	padding:1em;
+}
+
+.content .head #barname{
+	float:left;
+	max-width:15em;
+	margin-left:2em;
+	font-family:'华文行楷';
+	font-size:2em;
+}
+
+.content .head a #homeImg{
+	float:right;
+	max-width:4em;
+}
+
+/**
+*	main
+**/
+.content .main{
+	margin-top:1em;
+	padding:1em;
+	background:rgba(234, 222, 222, 0.51);
+}
+
+
+/**
+*	postAndContent
+**/
+.content .main .postAndContent #title{
+	font-family:'黑体';
+	font-size:1.5em;
+	padding-left:1em;
+	border-left: 3px fuchsia solid;
+}
+
+.content .main .postAndContent #author{
+	float:left;
+	width:20%;
+	padding-top:1em;
+	text-align:center;
+	border-right: 1px gray solid;
+}
+
+.content .main .postAndContent #a_content{
+	float:left;
+	width:70%;
+	padding:2em;
+	overflow: hidden;
+}
+
+.content .main .postAndContent #a_content #ac{
+	font-size:1.5em;
+	font-family:'微软雅黑';
+	padding-top:2em;
+	word-warp:break-word;
+}
+
+.content .main .postAndContent #a_content #sendtime{
+	font-family:'华文行楷';
+	color:blue;
+	float:right;
+}
+
+
+.main .postAndContent #author #a_photo{
+	max-width:5em;
+}
+
+.main .postAndContent #author #a_name{
+	font-size:2em;
+	font-family:'华文行楷';
+}
+
+
+/**
+*	replay
+**/
+.main .replay{
+	clear:both;
+}
+
+.main .replay #r_author{
+	float:left;
+	width:20%;
+	margin-top:1em;
+	text-align:center;
+	border-right: 1px gray solid;
+}
+
+
+.main .replay #r_author #r_photo{
+	max-width:3em;
+}
+
+.main .replay #r_author #r_name{
+	font-size:1.5em;
+	font-family:'华文行楷';
+}
+
+
+.main .replay #r_content{
+	float:left;
+	width:70%;
+	padding:1em;
+}
+
+.main .replay #r_content #r_ac{
+	font-size:1em;
+	font-family:'微软雅黑';
+	padding-top:2em;
+	word-warp:break-word;
+}
+
+.content .main .replay #r_content #r_sendtime{
+	font-family:'华文行楷';
+	color:blue;
+	float:right;
+}
+
+
+/**
+* 二级回复
+**/
+#secondReplay{
+	clear:both;
+	float:right;
+	background:rgba(128, 128, 128, 0.21);
+	padding:.6em;
+	margin:.4em;
+}
+
+#secondReplay #reImg{
+	max-width:1.5em;
+	vertical-align: middle;
+}
+
+
+
+/**
+*	回复+表情
+**/
+.secondrep{
+	clear:both;
+	position:relative;
+}
+
+#r_rep{
+	cursor:pointer;
+	color:blue;
+	//text-align:right;
+	margin-top:7em;
+	font-size:.8em;
+	display:inline-block;
+	//border:1px red solid;
+}
+
+
+#r_repn{
+	display:none;
+}
+
+#r_repcontent{
+	clear:both;
+	max-width:30em;
+	height:2em;
+	overflow: auto;
+	background:white;
+	//margin-left:10em;
+	padding:.6em;
+}
+
+#r_facebtn{
+	//float:right;
+	margin-left:24em;
+	padding:.6em;
+}
+
+#r_face{
+	cursor: pointer;
+}
+
+#r_btn{
+	background:blue;
+	color:white;
+	padding:.5em;
+	border-radius:.3em;
+	margin:.5em;
+}
+
+#r_btn:HOVER{
+	background:#647DD8;
+}
+
+
+#facelist1{
+	width:20em;
+	height:8em;
+	background:white;
+	padding:.1em;
+	position: absolute;
+	left:4.8em;
+	top:12.5em;
+	overflow: auto;
+	display:none;
+	z-index: 10;
+}
+
+#facelist1 ul li{
+	float:left;
+	list-style:none;
+	margin:.2em;
+	cursor: pointer;
+}
+
+
+#clearfloat{
+	clear:both;
+}
+
+
+/**
+* send replay content
+**/
+.main .sendMsg{
+	position: relative;
+}
+
+
+.sendContent{
+	max-width:40em;
+	height:8em;
+	background:white;
+	padding:1.5em;
+	overflow: auto;
+}
+
+#face{
+	width:2em;
+}
+
+#facelist{
+	width:20em;
+	height:8em;
+	background:white;
+	padding:.1em;
+	position: absolute;
+	left:2em;
+	top:-2em;
+	display:none;
+	overflow: auto;
+}
+
+#facelist ul li{
+	float:left;
+	list-style:none;
+	margin:.2em;
+	cursor: pointer;
+}
+
+#btn_ok{
+	background-color: #da820a;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px rgba(234, 202, 83, 0.62);
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 2em;
+    padding:.8em;
+    text-shadow: 1px 1px 0px #777;
+    text-decoration: none;
+}
+
+
+
+
+
+
+

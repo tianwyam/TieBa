@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	background:url("../images/bg3.jpg");
+	background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content{
+	margin:10px auto;
+	max-width:60em;
+}
+
+.content .head{
+	margin:0 auto;
+	max-width:60em;
+	height:10em;
+	padding:2em;
+	border:1px yellow solid;
+	background:rgba(24, 199, 12, 0.38);
+}
+
+.content .head #barphoto{
+	float:left;
+}
+
+.content .head #barname{
+	float:left;
+	font-size:2em;
+	line-height: 6em;
+	font-family:'华文行楷';
+	text-shadow: 3px 3px 2px #1D4E56;
+}
+
+/**
+*	+关注
+**/
+.content .head #addattention{
+	background:#DA3F3F;
+	cursor:pointer;
+	color:white;
+	font-size:1.4em;
+	display:inline-block;
+	padding:.3em;
+	border-radius:.3em;
+}
+.content .head #addattention:hover{
+	background:red;
+}
+
+.content .head #subattention{
+	background:#DA3F3F;
+	cursor:pointer;
+	color:white;
+	font-size:1.4em;
+	display:inline-block;
+	padding:.3em;
+	border-radius:.3em;
+}
+.content .head #subattention:hover{
+	background:red;
+}
+
+.content .head #sendPost{
+	float:right;
+}
+
+#homeImg{
+	max-width:3em;
+}
+
+#sendImg{
+	max-width:3em;
+}
+
+
+/**
+*	main 
+**/
+
+.content .main{
+	clear:both;
+	background:rgba(12, 199, 147, 0.38);
+	padding:1em;
+}
+
+.content .main #Popular{
+	font-size:1.2em;
+	font-family:'微软雅黑';
+	border-left:3px blue solid;
+	padding-left:8px;
+}
+
+.content .main #postsMssg{
+	margin:4em;
+	padding-left:2em;
+}
+
+.content .main #postsMssg #msg{
+	max-width:1em;
+	margin-left: 2em;
+}
+
+.content .main #postsMssg #title a{
+	margin-left: 2em;
+	text-decoration: none;
+}
+
+
+.content .main #postsMssg #sendtime{
+	float:right;
+	font-size:1.4em;
+	font-family:'华文行楷';
+	color:blue;
+}
+
+
+
+
+
+
+

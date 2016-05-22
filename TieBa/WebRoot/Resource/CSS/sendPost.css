@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	background-image: url("../images/bg5.jpg");
+}
+
+
+.content{
+	margin:0 auto;
+	max-width:50em;
+	margin-top:2em;
+	padding:2em;
+	background:rgba(25, 136, 59, 0.34);
+	box-shadow:7px 7px 9px #148617;
+}
+
+.content .top{
+	background-color: rgba(241,171,171,0.32);
+    border-radius: .5em;
+    box-shadow: 3px 3px 3px #083164;
+    color: #5A42A5;
+    margin:0 auto;
+    max-width:40em;
+    text-align:center;
+}
+
+.content .sendMsg form{
+	padding-left:3em;
+}
+
+#title{
+	width:40em;
+	height:2em;
+	padding:.5em;
+}
+
+#content{
+	width:40em;
+	height:8em;
+	background:white;
+	margin-left:3em;
+	padding:1.5em;
+	overflow: auto;
+}
+
+#btn_ok,#btn_cancel{
+	background-color: #da820a;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 3px rgba(234, 202, 83, 0.62);
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-left: 2em;
+    padding:.8em;
+    text-shadow: 1px 1px 0px #777;
+    text-decoration: none;
+}

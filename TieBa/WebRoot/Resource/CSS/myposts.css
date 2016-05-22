@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+
+
+body{
+    background-image: url("../images/bg5.jpg");
+    background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content{
+	margin:10px auto;
+	max-width:64em;
+	background:rgba(128, 128, 128, 0.19);
+	padding:.5em;
+}
+
+/**
+*	头部
+**/
+.head{
+	max-width:64em;
+	height:6em;
+	background-color: rgba(145, 137, 206, 0.58);
+}
+
+.head .photo{
+	float:left;
+	max-width:5.4em;
+	border:.4em #3AD3DA solid;
+	border-radius:.5em;
+}
+
+.head .uname{
+	display:block;
+	float:left;
+	font-size:3em;
+	margin-left:.3em;
+	font-family:'华文行楷';
+	color:pink;
+}
+
+.head .mypost{
+	display:block;
+	float:left;
+	font-size:4em;
+	margin:.4em auto;
+	margin-left:2.5em;
+	font-family:'华文行楷';
+	color:pink;
+	
+}
+
+.head .home{
+	float:right;
+}
+
+.head .home #homeImg{
+	max-width:2.2em;
+	vertical-align: middle;
+	margin-right:1em;
+}
+.head .back{
+	float:right;
+}
+
+.head .back #backImg{
+	max-width:2em;
+	vertical-align: middle;
+	margin-right:1em;
+}
+
+
+
+/**
+*	主体内容
+**/
+.main{
+	clear:both;
+}
+
+.main #Popular{
+	font-size:1.2em;
+	font-family:'微软雅黑';
+	border-left:3px blue solid;
+	padding-left:8px;
+}
+
+.main #barMssg{
+	margin-top:1em;
+	margin-left:1em;
+	clear:both;
+	height:6em;
+	//border:1px blue solid;
+}
+
+.main #barMssg #barImg{
+	max-width:4em;
+	float:left;
+	padding-top:1em;
+}
+
+/**
+*	贴子
+**/
+
+.main #barMssg #postMssg{
+	float:left;
+	margin-left:2em;
+	padding:0.8em;
+}
+
+.main #barMssg #postMssg #bname{
+	font-size:1.2em;
+}
+
+.main #barMssg #postMssg #title{
+	color:blue;
+}
+
+/**
+*	消息人数
+**/
+
+.main #barMssg #msgNum{
+	padding:4em;
+}
+
+.main #barMssg #msgNum #msg{
+	max-width:1.5em;
+	margin-left:4em;
+}
+
+.main #barMssg #msgNum #pnum{
+	font-size:1em;
+	font-family:'华文行楷';
+	color:blue;
+	margin-left:0.6em;
+}
+
+.main #barMssg #msgNum #sendtime{
+	float:right;
+	font-size:1.4em;
+	font-family:'华文行楷';
+	color:blue;
+}

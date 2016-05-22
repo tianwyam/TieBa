@@ -1,0 +1,171 @@
+
+body{
+    background-image: url("../images/bg5.jpg");
+    background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+.content{
+	margin:0 auto;
+	max-width:64em;
+}
+
+/**
+*	头部
+**/
+
+.top{
+	margin:0 auto;
+	margin-top:20px;
+	max-width:64em;
+	height:14em;
+	background-color: rgba(145, 137, 206, 0.58);
+}
+
+.top #photo{
+	float:left;
+	height:14em;
+	border-radius: 7em;
+}
+
+.top #head{
+	float:left;
+	margin:2em;
+	padding:2em;
+	margin-bottom:2em;
+}
+
+.top #head #nickname{
+	margin-top: 1em;
+	font-size:2.4em;
+	font-family: '华文行楷';
+	color: blue;
+}
+
+.top #logAndReg{
+	float:right;
+	padding:1em;
+	font-size:1.6em;
+	font-family:'华文行楷';
+	box-shadow: 4px 4px 40px #316DB9;
+	text-shadow: 1px 1px 0px #777;
+}
+
+#shutdown{
+	max-width:3em;
+	float:right;
+	padding:1em;
+}
+
+
+/**
+*	搜索
+**/
+.search{
+	clear:both;
+	float:right;
+	//border:1px blue solid;
+	display:inline-block;
+	padding:.5em;
+}
+
+.search .searchImg{
+	max-width:1.4em;
+}
+
+.search .searchContent{
+	padding:.5em;
+}
+
+.search #btnSearch{
+	background:green;
+	color:white;
+	padding:.5em;
+}
+
+/**
+*	消息 热门动态
+**/
+
+.main{
+	clear:both;
+}
+
+.main #Popular{
+	font-size:1.2em;
+	font-family:'微软雅黑';
+	border-left:3px blue solid;
+	padding-left:8px;
+}
+
+.main #barMssg{
+	margin-top:1em;
+	margin-left:1em;
+	clear:both;
+	height:6em;
+	//border:1px blue solid;
+}
+
+.main #barMssg #barImg{
+	max-width:4em;
+	float:left;
+	padding-top:1em;
+}
+
+/**
+*	贴子
+**/
+
+.main #barMssg #postMssg{
+	float:left;
+	margin-left:2em;
+	padding:0.8em;
+}
+
+.main #barMssg #postMssg #bname{
+	font-size:1.2em;
+}
+
+.main #barMssg #postMssg #title{
+	color:blue;
+}
+
+/**
+*	消息人数
+**/
+
+.main #barMssg #msgNum{
+	padding:4em;
+}
+
+.main #barMssg #msgNum #msg{
+	max-width:1.5em;
+	margin-left:4em;
+}
+
+.main #barMssg #msgNum #pnum{
+	font-size:1em;
+	font-family:'华文行楷';
+	color:blue;
+	margin-left:0.6em;
+}
+
+.main #barMssg #msgNum #sendtime{
+	float:right;
+	font-size:1.4em;
+	font-family:'华文行楷';
+	color:blue;
+}
+
+
+
+
+
+
+
+
+
+
