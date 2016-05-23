@@ -38,6 +38,17 @@ a{
 	margin-bottom:2em;
 }
 
+.top #head #addInf{
+	background:#EA648F;
+	padding:.5em;
+	max-width:5em;
+	font-family:'华文行楷';
+}
+.top #head #addInf:hover{
+	background:#E64E4E;
+}
+
+
 .top #head #nickname{
 	margin-top: 1em;
 	font-size:2.4em;
@@ -92,6 +103,8 @@ a{
 
 .main{
 	clear:both;
+	background:rgba(44, 222, 99, 0.25);
+	padding:.8em;
 }
 
 .main #Popular{

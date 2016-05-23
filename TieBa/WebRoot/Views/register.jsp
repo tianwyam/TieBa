@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="main">
-        <h1>普通用户注册</h1>
+        <h1>用户注册</h1>
         <form action="save.do" method="post">
             <fieldset>
-                <h2>用户基本信息</h2>
+                <h2>基本信息</h2>
                 <div class="fields">
                 	 <label id="info"></label>
                     <div class="row">
@@ -23,7 +23,7 @@
                         <input type="text" name="uname" id="uname" onblur="verify()" required/>
                     </div>
                     <div class="row">
-                        <label>密码</label>
+                        <label>密  &nbsp;码</label>
                         <input type="password" name="password" required/>
                     </div>
                 </div>

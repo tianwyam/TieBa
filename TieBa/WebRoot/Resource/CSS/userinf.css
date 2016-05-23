@@ -3,7 +3,7 @@
 body{
 	margin:0;
 	padding:0;
-	background:url("../images/bg1.jpg");
+	background:url("../images/bg5.jpg");
 }
 
 h1,h4 {
@@ -35,14 +35,14 @@ h1,h4 {
 	width:30%;
 	height:32em;
 	//border:1px red solid;
-	background:rgba(197, 178, 38, 0.15);
+	background:rgba(107, 96, 11, 0.3);
 }
 
 .content .body{
 	float:left;
 	width:69.3%;
 	height:32em;
-	background:rgba(177, 237, 247, 0.66);
+	background:rgba(148, 245, 151, 0.54);
 	//border:1px blue solid;
 	display:none;
 }

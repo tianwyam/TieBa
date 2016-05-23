@@ -42,7 +42,7 @@
   		<div id="head">
   		
   			<c:if test="${user.uname != null }">
-  			<p id="addInf"><a href="info.do?uname=${user.uname }">编辑资料</a></p>
+  			<p id="addInf"><a href="info.do?uname=${user.uname }">+ 编辑资料</a></p>
   			</c:if>
   			
   			<p id="nickname">${user.uname }</p>

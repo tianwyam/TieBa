@@ -26,7 +26,7 @@
 	  		
 	  		<c:choose>
 		  		<c:when test="${maps.isExist}">
-		  			<p id="subattention" onclick="attention()">&radic;已关注 | 取消</p>
+		  			<p id="subattention" onclick="subattention()">&radic;已关注 | 取消</p>
 		  		</c:when>
 		  		<c:otherwise>
 		  			<p id="addattention" onclick="attention()">+关注</p>
