@@ -25,53 +25,64 @@ public class PostBarsService {
 
 	@Autowired
 	private PostBarsDao postBarsDao;
-	
-	
+
 	/**
 	 * 获取 热门动态 （最新贴子）
+	 * 
 	 * @return List<Posts>
 	 */
-	public List<Posts> getPopularDynamic(String parent_id){
+	public List<Posts> getPopularDynamic(String parent_id) {
 		return postBarsDao.getPopularDynamic(parent_id);
 	}
-	
-	
+
 	/**
 	 * 查询 贴吧信息 及其中的 贴子
-	 * @param bname 贴吧名字
+	 * 
+	 * @param bname
+	 *            贴吧名字
 	 * @return Map
 	 */
-	public Map<String, Object> getPostsAndBarInf(String bname){
+	public Map<String, Object> getPostsAndBarInf(String bname) {
 		return postBarsDao.getPostsAndBarInf(bname);
 	}
-	
-	
+
 	/**
 	 * 搜索
+	 * 
 	 * @param searchName
 	 * @return
 	 */
-	public List<Posts> search(String searchName){
+	public List<Posts> search(String searchName) {
 		return postBarsDao.search(searchName);
 	}
-	
-	
+
 	/**
 	 * 加关注
+	 * 
 	 * @param follow
 	 * @return 成功/失败
 	 */
-	public boolean attention(Follow follow){
+	public boolean attention(Follow follow) {
 		return postBarsDao.attention(follow);
 	}
 	
-	
+	/**
+	 * 加关注
+	 * 
+	 * @param follow
+	 * @return 成功/失败
+	 */
+	public boolean subAttention(Follow follow) {
+		return postBarsDao.subAttention(follow);
+	}
+
 	/**
 	 * 通过 用户名 来获取他/她的关注的贴吧
+	 * 
 	 * @param uname
 	 * @return List<PostBars>
 	 */
-	public List<PostBars> getMyPostBars(String uname){
+	public List<PostBars> getMyPostBars(String uname) {
 		return postBarsDao.getMyPostBars(uname);
 	}
 

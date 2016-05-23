@@ -19,8 +19,7 @@
    
    <!-- 用-@注解-配置方式 -->
    <context:component-scan base-package="team.tieba.controller"/>
-   <context:component-scan base-package="team.tieba.dao"/>
-   <context:component-scan base-package="team.tieba.service"/>
+   
    
    <!-- viewResolver -->
    <bean id="viewResolver" 

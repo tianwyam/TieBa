@@ -13,10 +13,10 @@ public class PostBars {
 
 	// 贴吧名字
 	private String bname;
-	
+
 	// 贴吧简介
 	private String breif;
-	
+
 	// 人数
 	private int num;
 
@@ -28,15 +28,13 @@ public class PostBars {
 	}
 
 	/**
-	 * @param bname the bname to set
+	 * @param bname
+	 *            the bname to set
 	 */
 	public void setBname(String bname) {
 		this.bname = bname;
 	}
 
-
-	
-	
 	/**
 	 * @return the breif
 	 */
@@ -45,7 +43,8 @@ public class PostBars {
 	}
 
 	/**
-	 * @param breif the breif to set
+	 * @param breif
+	 *            the breif to set
 	 */
 	public void setBreif(String breif) {
 		this.breif = breif;
@@ -59,10 +58,11 @@ public class PostBars {
 	}
 
 	/**
-	 * @param num the num to set
+	 * @param num
+	 *            the num to set
 	 */
 	public void setNum(int num) {
 		this.num = num;
 	}
-	
+
 }

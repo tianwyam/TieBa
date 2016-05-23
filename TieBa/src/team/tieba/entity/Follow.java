@@ -19,65 +19,69 @@ public class Follow {
 	private int grade;
 	// 申请吧主的理由
 	private String reason;
-	
-	
+
 	// 构造器
-	public Follow(){}
-	
+	public Follow() {
+	}
+
 	/**
 	 * @return the uname
 	 */
 	public String getUname() {
 		return uname;
 	}
-	
+
 	/**
-	 * @param uname the uname to set
+	 * @param uname
+	 *            the uname to set
 	 */
 	public void setUname(String uname) {
 		this.uname = uname;
 	}
-	
+
 	/**
 	 * @return the bname
 	 */
 	public String getBname() {
 		return bname;
 	}
-	
+
 	/**
-	 * @param bname the bname to set
+	 * @param bname
+	 *            the bname to set
 	 */
 	public void setBname(String bname) {
 		this.bname = bname;
 	}
-	
+
 	/**
 	 * @return the grade
 	 */
 	public int getGrade() {
 		return grade;
 	}
-	
+
 	/**
-	 * @param grade the grade to set
+	 * @param grade
+	 *            the grade to set
 	 */
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
-	
+
 	/**
 	 * @return the reason
 	 */
 	public String getReason() {
 		return reason;
 	}
-	
+
 	/**
-	 * @param reason the reason to set
+	 * @param reason
+	 *            the reason to set
 	 */
 	public void setReason(String reason) {
 		this.reason = reason;
 	}
-	
+
 }

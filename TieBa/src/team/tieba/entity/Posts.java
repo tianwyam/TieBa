@@ -30,93 +30,98 @@ public class Posts {
 	private String parent_id;
 	// 回复/发贴时间
 	private Timestamp sendtime;
-	
+
 	// 回复的贴子
 	private List<Posts> replay;
-	
+
 	// 作者人信息
 	private UserInf userInf;
-	
-	
+
 	/**
 	 * @return the bname
 	 */
 	public String getBname() {
 		return bname;
 	}
-	
+
 	/**
-	 * @param bname the bname to set
+	 * @param bname
+	 *            the bname to set
 	 */
 	public void setBname(String bname) {
 		this.bname = bname;
 	}
-	
+
 	/**
 	 * @return the title
 	 */
 	public String getTitle() {
 		return title;
 	}
-	
+
 	/**
-	 * @param title the title to set
+	 * @param title
+	 *            the title to set
 	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	
+
 	/**
 	 * @return the content
 	 */
 	public String getContent() {
 		return content;
 	}
-	
+
 	/**
-	 * @param content the content to set
+	 * @param content
+	 *            the content to set
 	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
-	
+
 	/**
 	 * @return the author
 	 */
 	public String getAuthor() {
 		return author;
 	}
-	
+
 	/**
-	 * @param author the author to set
+	 * @param author
+	 *            the author to set
 	 */
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
+
 	/**
 	 * @return the pnum
 	 */
 	public int getPnum() {
 		return pnum;
 	}
-	
+
 	/**
-	 * @param pnum the pnum to set
+	 * @param pnum
+	 *            the pnum to set
 	 */
 	public void setPnum(int pnum) {
 		this.pnum = pnum;
 	}
-	
+
 	/**
 	 * @return the pid
 	 */
 	public String getPid() {
 		return pid;
 	}
-	
+
 	/**
-	 * @param pid the pid to set
+	 * @param pid
+	 *            the pid to set
 	 */
 	public void setPid(String pid) {
 		this.pid = pid;
@@ -130,13 +135,12 @@ public class Posts {
 	}
 
 	/**
-	 * @param parent_id the parent_id to set
+	 * @param parent_id
+	 *            the parent_id to set
 	 */
 	public void setParent_id(String parent_id) {
 		this.parent_id = parent_id;
 	}
-
-	
 
 	/**
 	 * @return the sendtime
@@ -146,7 +150,8 @@ public class Posts {
 	}
 
 	/**
-	 * @param sendtime the sendtime to set
+	 * @param sendtime
+	 *            the sendtime to set
 	 */
 	public void setSendtime(Timestamp sendtime) {
 		this.sendtime = sendtime;
@@ -160,7 +165,8 @@ public class Posts {
 	}
 
 	/**
-	 * @param replay the replay to set
+	 * @param replay
+	 *            the replay to set
 	 */
 	public void setReplay(List<Posts> replay) {
 		this.replay = replay;
@@ -174,12 +180,11 @@ public class Posts {
 	}
 
 	/**
-	 * @param userInf the userInf to set
+	 * @param userInf
+	 *            the userInf to set
 	 */
 	public void setUserInf(UserInf userInf) {
 		this.userInf = userInf;
 	}
-	
-	
-	
+
 }

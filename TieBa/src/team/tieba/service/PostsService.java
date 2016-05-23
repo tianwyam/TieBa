@@ -13,7 +13,7 @@ import team.tieba.dao.PostsDao;
 import team.tieba.entity.Posts;
 
 /**
- * @Description 
+ * @Description
  * @author WM
  * @date 2016-5-10 下午8:53:25
  * @version V1.0
@@ -23,37 +23,36 @@ public class PostsService {
 
 	@Autowired
 	private PostsDao postsDao;
-	
-	
-	
+
 	/**
 	 * 根据用户名来查询贴子
+	 * 
 	 * @param uname
 	 * @return
 	 */
-	public List<Posts> getPostsByUname(String uname){
+	public List<Posts> getPostsByUname(String uname) {
 		return postsDao.getPostsByUname(uname);
 	}
-	
-	
+
 	/**
-	 *  通过PID 获取 贴子
+	 * 通过PID 获取 贴子
+	 * 
 	 * @param pid
 	 * @return Map
 	 */
-	public Map<String, Object> getPostById(String pid){
+	public Map<String, Object> getPostById(String pid) {
 		return postsDao.getPostById(pid);
 	}
-	
-	
-	
+
 	/**
 	 * 发表贴子
-	 * @param posts 贴子信息
+	 * 
+	 * @param posts
+	 *            贴子信息
 	 * @return true/false
 	 */
-	public boolean savePosts(Posts posts){
+	public boolean savePosts(Posts posts) {
 		return postsDao.savePosts(posts);
 	}
-	
+
 }
