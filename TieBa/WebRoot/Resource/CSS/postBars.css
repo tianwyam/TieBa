@@ -74,6 +74,12 @@ a{
 	max-width:3em;
 }
 
+#settingImg{
+	max-width:2em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
 #sendImg{
 	max-width:3em;
 }

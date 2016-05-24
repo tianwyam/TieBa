@@ -25,6 +25,44 @@ import team.tieba.util.OracleDBUtil;
  */
 @Repository
 public class PostBarsDao {
+	
+	
+	
+	
+	/**
+	 * 申请成为吧主
+	 * @param follow
+	 * @return true/false
+	 */
+	public boolean applyMaster(Follow follow){
+		
+		Connection conn = null;
+		String sql = "update follow set reason=? where uname=? and bname=?";
+		Object[] param = {
+				follow.getReason(),
+				follow.getUname(),
+				follow.getBname()
+		};
+		
+		
+		try {
+			
+			conn = OracleDBUtil.getODBconn();
+			int update = new QueryRunner().update(conn, sql, param);
+			
+			if(update>0)
+				return true;
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}finally{
+			OracleDBUtil.CloseDBConn(conn);
+		}
+		
+		return false;
+	}
+	
 
 	/**
 	 * 获取 热门动态 （最新贴子）

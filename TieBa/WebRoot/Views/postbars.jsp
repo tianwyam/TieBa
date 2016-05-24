@@ -44,6 +44,11 @@
 		  				<img alt="发贴" src="../Resource/images/send.png" id="sendImg" />
 		  			</a>
 	  			</p>
+	  			<p>
+	  				<a href="javascript:void(0)" title="申请吧主" onclick="apply()">
+		  				<img alt="设置" src="../Resource/images/setting.png" id="settingImg" />
+	  				</a>
+	  			</p>
 	  		</div>
   		</div>
   		

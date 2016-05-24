@@ -1,10 +1,12 @@
 package team.tieba.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,6 +34,44 @@ public class PostBarsController {
 
 	@Autowired
 	private PostBarsService service;
+	
+	
+	
+	/**
+	 * 申请成为吧主
+	 * @param request
+	 * @param response
+	 * @param follow
+	 * @return
+	 * @throws IOException
+	 */
+	@RequestMapping("/apply")
+	public String applyMaster(HttpServletRequest request,
+								HttpServletResponse response, 
+									Follow follow) throws IOException{
+		
+		User user = (User)request.getSession().getAttribute("user");
+		
+		if(user == null)
+			return "login";
+		
+		follow.setUname(user.getUname());
+		
+		boolean isSucc = service.applyMaster(follow);
+		
+		if (!isSucc) {
+			return "error";
+		}
+		
+		PrintWriter out = response.getWriter();
+		
+		out.print(true);
+		
+		return null;
+		
+	}
+
+	
 
 	/**
 	 * 通过用户名 来获取 关注的贴吧

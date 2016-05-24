@@ -26,6 +26,18 @@ public class PostBarsService {
 	@Autowired
 	private PostBarsDao postBarsDao;
 
+	
+	
+	/**
+	 * 申请成为吧主
+	 * @param follow
+	 * @return true/false
+	 */
+	public boolean applyMaster(Follow follow){
+		return postBarsDao.applyMaster(follow);
+	}
+	
+	
 	/**
 	 * 获取 热门动态 （最新贴子）
 	 * 
